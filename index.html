@@ -5,24 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <div id="weather-container">
-      <div class="weather-card">
-        <h1 id="cityName"></h1>
-        <div id="degrees"></div>
-        <div class="divider">------</div>
-        <div class="weather-addons">
-          <div class="cloud-container">
-            <p id="clouds"></p>
-            <p id="cloudIcon"></p>
-          </div>
-          <div class="wind-container">
-            <p>Wind speed:</p>
-            <p id="wind"></p>
-          </div>
+    <div class="weather-wrapper">
+      <div class="main-info">
+        <h2 id="city"></h2>
+        <div>
+          <p id="temp"></p>
         </div>
+      </div>
+      <div id="info">
+        <p id="weatherInfo"><img id="weatherIcon" /></p>
+        <p id="weatherDescription"></p>
       </div>
     </div>
     <script src="script.js"></script>
