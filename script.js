@@ -3,8 +3,8 @@ const apiKey = 'edcc4d09c628262de0a35e3b8054e26f';
 const cityNameEl = document.getElementById('city');
 const tempEl = document.getElementById('temp');
 const weatherInfoEl = document.getElementById('weatherInfo');
-const weatherDescEl = document.getElementById('weatherDescription');
 const weatherIconEl = document.getElementById('weatherIcon');
+const windInfoEl = document.getElementById('windInfo');
 
 const weatherIcon = function weatherIcon(iconCode) {
   return `http://openweathermap.org/img/w/${iconCode}.png`;
@@ -42,9 +42,11 @@ async function fetchAndRender(url) {
 
 function renderData(resData) {
   cityNameEl.textContent = resData.name;
-  tempEl.textContent = resData.main.temp;
-  weatherInfoEl.textContent = resData.weather[0].main;
-  weatherDescEl.textContent = resData.weather[0].description;
+  tempEl.textContent = Math.trunc(resData.main.temp);
+  weatherInfoEl.textContent = resData.weather[0].description.toUpperCase();
+
+  weatherIconEl.src = weatherIcon(resData.weather[0].icon);
+  windInfoEl.textContent = resData.wind.speed;
 }
 
 //weather: [ { id: 800, main: 'Clear', description: 'clear sky', icon: '01n' } ],

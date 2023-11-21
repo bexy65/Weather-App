@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather</title>
     <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://kit.fontawesome.com/a076d05399.js"
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
       crossorigin="anonymous"
-    ></script>
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <div class="weather-wrapper">
@@ -16,11 +19,15 @@
         <h2 id="city"></h2>
         <div>
           <p id="temp"></p>
+          <img src="" id="weatherIcon" />
         </div>
       </div>
       <div id="info">
-        <p id="weatherInfo"><img id="weatherIcon" /></p>
-        <p id="weatherDescription"></p>
+        <div id="windSpeed">
+          <p id="windInfo"></p>
+          <i class="fa-solid fa-wind"></i>
+        </div>
+        <p id="weatherInfo"></p>
       </div>
     </div>
     <script src="script.js"></script>

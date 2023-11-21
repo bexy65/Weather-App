@@ -1,5 +1,6 @@
 body {
 	background: linear-gradient(90deg, #7474BF 10%, #348AC7 90%);
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .weather-wrapper {
@@ -10,4 +11,49 @@ body {
 	flex-direction: column;
 	align-items: center;
 	padding: 0px;
+	border-radius: 18px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
+.main-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.main-info div {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 70%;
+}
+
+#temp {
+	font-size: 48px;
+	margin: 0;
+	padding: 5px;
+	border-radius: 12px;
+	color: white;
+	background-color: rgba(165, 165, 255, 0.582);
+}
+
+#info {
+	display: flex;
+	flex-direction: column;
+	margin-top:20px;
+	width: 70%;
+	justify-content: center;
+	align-items: center;
+}
+
+#info #windSpeed {
+	display: flex;
+	flex-direction: row;
+	width: 70%;
+	align-items: center;
+	justify-content: center;
+	font-size: 26px;
+}
+
+
