@@ -48,21 +48,3 @@ function renderData(resData) {
   weatherIconEl.src = weatherIcon(resData.weather[0].icon);
   windInfoEl.textContent = resData.wind.speed;
 }
-
-//weather: [ { id: 800, main: 'Clear', description: 'clear sky', icon: '01n' } ],
-//weather[0].icon,
-//weather[0].main,
-//weather[0].description,
-
-//base: 'stations',
-//display these features in UI
-//data.main.temp - temp_max/temp_min
-//data.main.feels_like
-//data.name
-//data.weather[0].description
-//data.weather[0].icon
-//data.wind
-//data.timezone
-//data.sys.country
-
-//update every 5 seconds
