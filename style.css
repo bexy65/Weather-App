@@ -21,7 +21,7 @@ h1 {
   width: 50%;
   padding: 10px;
   border-radius: 16px;
-  box-shadow: rgba(180, 180, 180, 0.73) 0px 5px 15px;
+  box-shadow: rgba(255, 255, 255, 0.73) 0px 5px 15px;
 
   display: flex;
   flex-direction: column;
@@ -34,7 +34,7 @@ h1 {
   padding: 5px;
   background-color: gray;
   border-radius: 16px;
-  box-shadow: rgba(180, 180, 180, 0.73) 0px 5px 15px;
+  box-shadow: rgba(180, 180, 180, 0.73) 0px 3px 5px;
 }
 
 .weather-addons {

@@ -16,7 +16,7 @@ const assets = {
   clear: 'Clear',
 };
 
-//invalid api key openweather api
+//fetch from api
 const message = document.getElementById('message');
 async function checkWeather() {
   const res = await fetch(url);
